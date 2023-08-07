@@ -1,0 +1,9 @@
+.section-two{
+    align-items: end;
+}
+
+.section-two>div>p{
+    background: transparent;
+    font-family: Londrina Solid;
+    font-size: 30px;
+}

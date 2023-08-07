@@ -1,0 +1,16 @@
+.heading{
+    font-family: 'Londrina Solid', cursive;
+}
+
+.heading span{
+    background: linear-gradient(90deg, #9C4F96 0%, #FF6355 17.19%, #FBA949 34.38%, #FAE442 49.48%, #8BD448 69.79%, #2AA8F2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.claim-btn{
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, #9C4F96 0%, #FF6355 17.19%, #FBA949 34.38%, #FAE442 49.48%, #8BD448 69.79%, #2AA8F2 100%) 1;
+}
