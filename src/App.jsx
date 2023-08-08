@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable no-unused-vars */
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
@@ -18,9 +20,27 @@ import NumberGeneration from './components/NumberGeneration/NumberGeneration'
 function App() {
   const [count, setCount] = useState(0);
   const [modal1, setModal1] = useState(false);
-  const toggleModal1 = () =>{
-        setModal1(!modal1);
+  const toggleModal1 = (value) =>{
+        setModal1(value);
+        if(value){
+          document.body.style.overflow = 'hidden'
+        }else{
+          document.body.style.overflow = 'auto'
+        }
   }
+  const [modal2, setModal2] = useState(false);
+  const toggleModal2 = (value) =>{
+        setModal2(value);
+        if(value){
+          document.body.style.overflow = 'hidden'
+        }else{
+          document.body.style.overflow = 'auto'
+        }
+  }
+
+  const [filled, setFilled] = useState(0);
+  const [running, isRunning] = useState(false);
+
 
   return (
     <div className='relative'>
@@ -28,10 +48,11 @@ function App() {
       {
         modal1 && <Modal toggleModal1={toggleModal1} modal={modal1}></Modal>
       }
-
-      <NumberGeneration></NumberGeneration>
+      {
+        modal2 && <NumberGeneration filled={filled} isRunning={isRunning} setFilled={setFilled} modal={modal2} toggleModal2={toggleModal2}></NumberGeneration>
+      }
       
-      <Main></Main>
+      <Main toggleModal2={toggleModal2} modal={modal2}></Main>
       <Gradient></Gradient>
       <SectionOne></SectionOne>
       <SectionTwo></SectionTwo>

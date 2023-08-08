@@ -1,4 +1,12 @@
-.modal{
+.modal, .overlay{
     height: 100vh;
     background-color: #070707;
+}
+
+.modal{
+    z-index: 1000;
+}
+
+.overlay{
+    z-index: 999;
 }

@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import './Main.css';
 import { BeakerIcon, ChevronDownIcon } from '@heroicons/react/24/solid'
 
-const Main = () => {
+const Main = ({toggleModal2}) => {
     return (
         <div className='relative w-full my-10 md:pt-10 mb-20'>
             {/* heading */}
@@ -23,7 +24,7 @@ const Main = () => {
             {/* 3 */}
             <img className='absolute md:top-96 md:block hidden  md:right-96 right-5' src="images/green_astronaut_2 1.png" alt="" />
             {/* claim button */}
-            <button className='claim-btn mt-12 text-xl font-bold block w-44 h-12 mx-auto'>
+            <button onClick={()=>toggleModal2(true)} className='claim-btn mt-12 text-xl font-bold block w-44 h-12 mx-auto'>
                 Claim
             </button>
 
