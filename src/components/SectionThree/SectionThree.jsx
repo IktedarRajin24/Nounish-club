@@ -1,10 +1,20 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useState } from 'react';
 import './SectionThree.css'
 import { ChevronDownIcon } from '@heroicons/react/24/solid';
+import {
+    Accordion,
+    AccordionHeader,
+    AccordionBody,
+  } from "@material-tailwind/react";
+
+
 
 const SectionThree = () => {
+    
     return (
+        
         <div className='mt-24 pt-36 w-full px-10 bg-ash'>
             <div className='md:flex justify-between items-center mb-36 bg-ash w-10/12 mx-auto'>
                 <div className='md:text-left text-center bg-ash md:mb-0 mb-10'>

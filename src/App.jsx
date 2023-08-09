@@ -14,6 +14,9 @@ import SectionTwo from './components/SectionTwo/SectionTwo'
 import SectionThree from './components/SectionThree/SectionThree'
 import Modal from './components/Modal/Modal'
 import NumberGeneration from './components/NumberGeneration/NumberGeneration'
+import Registered from './components/Registered/Registered'
+import { Link } from 'react-router-dom'
+
 
 
 
@@ -43,7 +46,7 @@ function App() {
 
 
   return (
-    <div className='relative'>
+    <div className='relative overflow-x-hidden'>
       <Navbar toggleModal1={toggleModal1} modal={modal1}></Navbar>
       {
         modal1 && <Modal toggleModal1={toggleModal1} modal={modal1}></Modal>
@@ -51,6 +54,13 @@ function App() {
       {
         modal2 && <NumberGeneration filled={filled} isRunning={isRunning} setFilled={setFilled} modal={modal2} toggleModal2={toggleModal2}></NumberGeneration>
       }
+      {/* {
+        filled === 98 && <Link to="/registered" >
+          <Registered/>
+        </Link>
+      } */}
+
+      
       
       <Main toggleModal2={toggleModal2} modal={modal2}></Main>
       <Gradient></Gradient>

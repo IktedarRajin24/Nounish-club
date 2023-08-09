@@ -16,9 +16,9 @@ const Main = ({toggleModal2}) => {
                 The Nounish Club includes all the NNS numbers from 0 to 9999.  10k names which will be distributed to anyone, for free.
             </p>
             {/* star */}
-            <img className='absolute md:top-4 top-0  md:right-96 right-5' src="images/Group 159.png" alt="" />
+            <img className='absolute md:top-4 -top-7  md:right-96 right-5' src="images/Group 159.png" alt="" />
             {/* 1 */}
-            <img className='absolute md:top-80 top-96  md:left-48 left-5 md:w-auto w-16' src="images/Blue_on_a_rocket 2.png" alt="" />
+            <img className='absolute md:top-80 top-96 md:left-48 left-5 md:w-auto w-16' src="images/Blue_on_a_rocket 2.png" alt="" />
             {/* 2 */}
             <img className='absolute md:top-28 md:block hidden md:right-60 w-auto' src="images/white_with_umbrella (1) 1.png" alt="" />
             {/* 3 */}

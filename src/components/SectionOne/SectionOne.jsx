@@ -4,7 +4,7 @@ import './SectionOne.css';
 
 const SectionOne = () => {
     return (
-        <div className='w-9/12 grid md:grid-cols-3 place-items-center md:gap-0 gap-10 mt-36 mx-auto'>
+        <div className='w-9/12 grid md:grid-cols-3 place-items-center md:gap-0 gap-10 mt-60 mx-auto'>
             <div className='md:w-80 w-64 md:mx-0 mx-auto'>
                 <h1 className='md:text-7xl text-4xl md:text-left text-center'>Let the proliferation begin</h1>
             </div>

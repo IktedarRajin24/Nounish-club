@@ -7,7 +7,7 @@ import { XMarkIcon } from '@heroicons/react/24/solid';
 const Modal = ({toggleModal1}) => {
     return (
         <div className='fixed overlay md:h-full h-max w-full bg-opacity-0'>
-            <div tabIndex="-1" className="fixed left-0 right-0 top-24 overflow-hidden m-auto w-full modal mx-auto p-2">
+            <div tabIndex="-1" className="fixed left-0 right-0 top-0 overflow-y-scroll pt-40 w-full modal mx-auto p-2">
                 <h1 className='md:text-5xl text-3xl  text-center'>Choose your wallet</h1>
                 <XMarkIcon className='h-10 w-10 absolute top-3 right-3' onClick={()=>toggleModal1(false)}></XMarkIcon>
                 <div className='md:flex justify-center items-center h-80 w-9/12 mx-auto md:mt-36 mt-16 mb-20'>
