@@ -5,13 +5,14 @@
 import React, { useEffect, useState } from 'react';
 import './NumberGeneration.css';
 import { XMarkIcon } from '@heroicons/react/24/solid';
-import { Link,  Navigate,  useLocation, useNavigate } from 'react-router-dom';
+import { Link,  Navigate,  redirect,  useLocation, useNavigate } from 'react-router-dom';
 import Registered from '../Registered/Registered';
 
 const NumberGeneration = (props) => {
     const {modal, filled, isRunning, setFilled} = props;
     const toggleModal2 = props.toggleModal2;
     const navigate = useNavigate();
+    
     
     if(modal){
         useEffect(()=>{

@@ -3,8 +3,10 @@ import React from 'react';
 import './Registered.css';
 import Navbar from '../Navbar/Navbar';
 import { ArrowLeftIcon } from '@heroicons/react/24/solid';
+import { useNavigate } from 'react-router-dom';
 
 const Registered = () => {
+    const navigate = useNavigate();
     return (
         <div>
             <Navbar></Navbar>
@@ -17,7 +19,7 @@ const Registered = () => {
                 <button className='claim-btn mt-12 text-xl font-bold block w-44 h-12 mx-auto'>
                     Manage
                 </button>
-                <button onClick={()=>{window.location.replace('/')}} className='claim-btn mt-12 text-xl font-bold w-44 h-12 mx-auto flex  justify-center items-center'>
+                <button onClick={()=>{navigate('/')}} className='claim-btn mt-12 text-xl font-bold w-44 h-12 mx-auto flex  justify-center items-center'>
                     Go Back <ArrowLeftIcon className='h-6 w-6 ms-5'/>
                 </button>
 
